@@ -13,6 +13,7 @@ class tooltip {
 
   updateVariable() {
     const suffix = this.dataset.sizing || '';
+    console.log(this);
     document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
 
   }
